@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="{{ app()->getLocale() }}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', 'Weibo App')</title>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>@yield('title', 'Weibo App') - Weibo</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
-<body>
-    @include('layouts._header')
 
-    <div class="container">
-        <div class="offset-md-1 col-md-10">
-            @include('shared._messages')
-            @yield('content')
-            @include('layouts._footer')
+<body>
+
+    <div id="app" class="">
+
+        @include('layouts._header')
+
+        <div class="container">
+            <div class="offset-md-1 col-md-10">
+                @include('shared._messages')
+                @yield('content')
+                @include('layouts._footer')
+            </div>
         </div>
+
     </div>
 
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
+
 </html>
