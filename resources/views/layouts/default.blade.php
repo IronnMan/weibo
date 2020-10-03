@@ -8,7 +8,7 @@
   <title>@yield('title', 'Weibo App')</title>
 
   <!-- Fonts -->
-  <link href="/css/app.css" rel="stylesheet">
+  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 
 </head>
