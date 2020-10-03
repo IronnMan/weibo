@@ -14,18 +14,15 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a href="/" class="navbar-brand">Weibo App</a>
-      <ul class="navbar-nav justify-content-end">
-        <li class="nav-item"><a href="/help" class="nav-link"></a></li>
-        <li class="nav-item"><a href="#" class="nav-link">登录</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="app" class="wb-miniblog">
 
-  <div class="container content">
-    @yield('content')
+    @include('layouts._header')
+
+    <div class="container content">
+      @yield('content')
+    </div>
+
+    @include('layouts._footer')
   </div>
 </body>
 

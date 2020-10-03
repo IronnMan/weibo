@@ -10902,9 +10902,30 @@ a.text-dark:focus {
 body {
   font-size: 14px;
   font-weight: normal;
+  background-color: #b4daf0;
+  background-image: url(/images/body_repeat.png?e4f73ae66f77665045081f321f6dc59c);
+  background-repeat: repeat-x;
+  background-position: center 0;
+}
+
+.wb-miniblog {
+  background: url(/images/body_bg_page.jpg?6838ff555c6fb1da78aa2852f31ce01e) no-repeat top center;
 }
 
 nav.navbar.navbar-expand-lg {
   margin-bottom: 20px;
+}
+
+nav.wb-global-nav {
+  border-top: 2px solid #fa7d3c;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.footer {
+  display: block;
+  clear: both;
+  text-align: center;
+  padding: 20px 0 45px;
 }
 
