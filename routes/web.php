@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'StaticPagesController@home')->name('home');
 
 Auth::routes();
+
+Route::get('/users/{user}', 'UsersController@show')->name('users.show');
